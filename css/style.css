@@ -25,7 +25,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystem, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: var(--color-text);
   background: var(--color-bg);
   line-height: 1.7;
@@ -37,7 +37,6 @@ body {
   padding: 0 1.5rem;
 }
 
-a,
 a {
   color: var(--color-accent);
   text-decoration: none;
@@ -215,4 +214,210 @@ a:hover {
 }
 .offer-sections > section:nth-child(even) {
   background: var(--color-surface);
+}
+
+.benefits-list {
+  list-style: none;
+}
+.benefits-list li {
+  padding: 0.4rem 0;
+}
+.benefits-list li::before {
+  content: "\2713 ";
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.steps {
+  padding-left: 1.25rem;
+}
+.steps li {
+  padding: 0.5rem 0;
+}
+
+.faq {
+  padding: 2.5rem 0;
+}
+.faq details {
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.75rem;
+}
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.faq details p {
+  padding-top: 0.5rem;
+  color: var(--color-muted);
+}
+
+.cta-section {
+  text-align: center;
+  padding: 3rem 0;
+  background: var(--color-accent-light);
+}
+.cta-section h2 {
+  margin-bottom: 0.75rem;
+}
+.cta-section p {
+  color: var(--color-muted);
+  margin-bottom: 1.5rem;
+}
+
+.pricing-card {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.pricing-card.featured {
+  border-color: var(--color-accent);
+  border-width: 2px;
+}
+.pricing-card h3 {
+  margin-bottom: 0.5rem;
+}
+.pricing-card .pricing-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 1.25rem;
+}
+.pricing-card ul {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  flex: 1;
+  font-size: 0.9rem;
+}
+.pricing-card ul li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.pricing-card ul li::before {
+  content: "\2713 ";
+  color: var(--color-accent);
+  font-weight: 700;
+}
+.pricing-card .cta-primary {
+  margin-top: auto;
+}
+
+.order-form {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  max-width: 520px;
+  margin: 0 auto;
+}
+.form-group {
+  margin-bottom: 1.25rem;
+}
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.form-group input[type="email"],
+.form-group input[type="text"],
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-family: inherit;
+}
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+.form-hint {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin-top: 0.25rem;
+}
+.form-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.form-consent input[type="checkbox"] {
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+.form-consent label {
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.form-note {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin-top: 1rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  padding: 2.5rem 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.footer-grid h4 {
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-text);
+}
+.footer-grid ul {
+  list-style: none;
+}
+.footer-grid ul li {
+  padding: 0.25rem 0;
+}
+.footer-grid ul li a {
+  color: var(--color-muted);
+}
+.cookie-notice {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+  .container {
+    padding: 0 1rem;
+  }
+  .nav-main {
+    gap: 0.75rem;
+  }
 }
