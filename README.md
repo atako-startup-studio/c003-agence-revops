@@ -19,26 +19,22 @@ c003-agence-revops/
 
 ## Services
 
-- Audit RevOps
-- Structuration des opérations commerciales
-- Intégration CRM
-- Migration CRM
-- Reporting et tableaux de bord
-- Formation RevOps
-- Accompagnement continu
-- Agents IA RevOps
+- Audit RevOps — Diagnostic complet de la stack et des processus commerciaux
+- Pilotage du revenu — KPIs, tableaux de bord, prévisions et rituels
+- Stack HubSpot — Déploiement et configuration CRM HubSpot
+- Stack HubSpot + Salesforce — Architecture bi-CRM synchronisée
+- Accélération — Scoring avancé, automatisations et agents IA RevOps
 
 ## Utilisation
 
 1. Déployer via GitHub Pages (activé sur le dépôt)
 2. Configurer le domaine `naxtep.com` (CNAME vers `atako-startup-studio.github.io`)
-3. Créer les pages de détail dans `offres/` (liées depuis l'index)
+3. Les pages d'offres sont dans `offres/`, accessibles depuis le landing et entre elles
 
 ## Ce qui peut casser
 
-- Les liens vers `offres/*.html` pointent vers des pages non encore créées (404)
 - Le lien mail `contact@naxtep.com` nécessite la configuration du domaine et MX
-- Les pages d'offres individuelles ne sont pas encore créées
+- `js/stripe.js` est référencé mais pas encore créé
 
 ## Hébergement
 
